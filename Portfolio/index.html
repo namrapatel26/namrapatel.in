@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Tiltle icon-->
+    <link rel="shortcut icon" href="images/favicon5.ico">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>Namra Patel</title>
+</head>
+<body>
+    <section id="main">
+        <nav>
+            <a href="#" class="logo">NP</a>
+            <!--Bar icon-->
+            <div class="toggle"></div>
+            <!--Menu-->
+            <ul class="menu">
+                <li><a href="#main" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact-form">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Name-->
+        <div class="name">
+            <h1><font color="35383b">Namra</font> <font color="066b57">Patel</font></h1>
+            <!--Details-->
+            <p class="details">
+                <div id="odd">Electronics Engineer</div>
+                <div id="even">Programmer</div>
+                <div id="odd">Web Developer</div>
+            </p>
+        </div>
+        <!--Social-->
+        <div class="social">
+            <a href="https://www.linkedin.com/in/namra-patel-47a73819a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/namrapatel26?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/NamraPatel26" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/namra.patel.96/" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </section>
+    <!--About section-->
+    <section id="about">
+        <div class="about-text">
+            <h1>About me</h1>
+            <p>I am an undergrad student at BITS Pilani. I am enthusiastic about new hardware technologies and programming. 
+               Besides coding in C++ and Python, I have a fair bit of experience in working on Web Design and a 
+               strong Data Structures foundation. Anything about sports would be a great ice breaker!</p>
+        </div>
+    </section>
+    <!--Projects-->
+    <section id="projects">
+        <!--Projects heading-->
+        <div class="p-heading">
+            <h1>Projects</h1>
+        </div>
+        <!--projects box container-->
+        <div class="p-b-container">
+            <!--box-1-->
+            <div class="p-box">
+                <!--projects box img-->
+                <div class="p-b-img">
+                    <div class="p-type">IoT Edge Device Architecture</div>
+                    <img src="images/labview.jpg">
+                </div>
+                <!--projects box text-->
+                <div class="p-b-text">
+                    <a href="#">System diagnostics application providing real 
+                        time data of the remote device to the server. 
+                    </a>
+                </div>
+            </div>
+
+            <!--box-2-->
+            <div class="p-box">
+                <!--projects box img-->
+                <div class="p-b-img">
+                    <div class="p-type">AWS Deployment</div>
+                    <img src="images/aws.jpg">
+                </div>
+                <!--projects box text-->
+                <div class="p-b-text">
+                    <a href="#">Set up AWS EC2 web server and configure services
+                        through Virtual Hosting through Apache V2.
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--work-->
+    <section id="work">
+        <h1>Internships</h1>
+        <h2>Electrono Solutions</h2>
+        <p>It is an IoT solutions company which is specialized in remote engineering. 
+        I had my internship during the summer of 2020 where I worked with a team on 
+        edge device application design. We created a diagnostics application using 
+        LabView which generated real time system parameters of edge device. The 
+        application was also designed to perform timely connectivity check between 
+        the server and the remote edge.
+        </p>
+        <h2>Demux</h2>
+        <p>Configured a web server, hosted a web service and created a 301 redirect to demux servers.
+            We also configured DNS and saw how it works in real time.
+        </p>
+    </section>
+    <!--Contact form-->
+    <section id="contact-form">
+        <form>
+            <!--left-->
+            <div class="contact-left">
+                <h1 class="c-l-heading"><font style="border-bottom:3px solid #066b57;">Writ</font>e Me</h1>
+                <div class="f-name">
+                <!--name-->
+                <font>Name</font>
+                <input type="text" placeholder="Full Name">
+                </div>
+            <!--email-->
+            <div class="f-email">
+                <!--name-->
+                <font>Email</font>
+                <input type="email" placeholder="example@xyz.com">
+            </div>
+            </div>
+            <!--right-->
+            <div class="contact-right">
+                <!--message-->
+                <div class="message">
+                    <font>Message</font>
+                    <textarea name="message" row="5" cols="20" placeholder="Write message"></textarea>
+                </div>
+                <!--submit-->
+                <button>submit</button>
+            </div>
+
+        </form>
+    </section>
+    <footer>
+        <div id="my_email">Email: namrapatel26@gmail.com</div>
+        <div id="my_phone">Phone no. +91 94095 52853</div>
+    </footer>
+    <!--Jquery-->
+    <script type="text/javascript" src="js/Jquery.js"></script>
+    <!--For Change Bar Icon to "x"-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav ul').toggleClass('active-menu')
+            })
+        })
+    </script>   
+</body>
+</html>

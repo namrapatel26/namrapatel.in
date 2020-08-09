@@ -1,0 +1,541 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.toggle{
+    display: none;
+}
+#main{
+    width: 100%;
+    height: 95vh;
+    box-sizing: border-box;
+    background-color: rgb(206, 216, 215);
+    position: relative;
+    background-image: url("../images/bg6.jpeg");
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: calibri;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 50px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+.menu{
+    display: flex;
+}
+.menu li a{
+    padding: 10px 15px;
+    color: #35383b;
+    font-size: 15px;
+}
+.logo{
+    padding: 0px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #066b57;
+    font-family: poppins;
+    letter-spacing: -5px;
+}
+.menu li a:hover, .menu li a.active{
+    background-color: #066b57;
+    color: #FFFFFF !important;
+    font-weight: 700;
+    transition: all ease 0.5s;
+}
+.name{
+    font-family: calibri;
+    width: 700px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+}
+#odd{
+    color: #066b57;
+    font-size: 40px;
+}
+#even{
+    color: #35383b;
+    font-size: 40px;
+}
+.name h1{
+    font-family: Poppins;
+    font-size: 120px;
+    margin: 0px;
+    letter-spacing: 1px;
+    color: #35383b;
+}
+.social{
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    display: flex;
+}
+.social a{
+    margin: 6px 12px;
+}
+.social i{
+    color: #066b57;
+    font-size: 25px;
+}
+.social a:hover i{
+    color: #066b57;
+    transition: all ease 0.5s;
+}
+#about{
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    padding: 80px 5% 0px 5%;
+}
+.about-text{
+    font-family: calibri;
+    width: 50%;
+}
+.about-text h1{
+    font-size: 5rem;
+    color: #066b57;
+    margin: 0px;
+    padding: 0px;
+}
+.about-text p{
+    font-size: 1.2rem;
+    color: #35383b;
+}
+#projects{
+    width: 100%;
+    height: 100vh;
+    font-family: calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    background-color: #35383b;
+}
+.p-heading h1{
+    color: #fff;
+    font-size: 5rem;
+    margin: 0px;
+    padding: 0px;
+}
+.p-heading p{
+    color: #fff;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0px;
+}
+.p-heading{
+    text-align: center;
+    margin: 20px 0px;
+}
+.p-box{
+    background-color: #066b57;
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 1);
+    position: relative;
+}
+.p-b-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-b-img{
+    width: 100%;
+    height: 70%;
+    font-weight: bold;
+}
+.p-b-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.p-b-text{
+    width: 100%;
+    height: 30%;
+    background-color: #066b57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-b-text a{
+    margin: 0px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: calibri;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+.p-type{
+    font-family: calibri;
+    color: #fff;
+    background-color: #35383b;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+    align-items: center;
+}
+.p-box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+#work{
+    width: 70%;
+    height: 80vh;
+    box-sizing: border-box;
+    align-items: top;
+    justify-content: center;
+    padding: 30px 5% 0px 5%;
+    font-family: calibri;
+}
+#work h1{
+    margin: 20px 0px;
+    font-size: 5rem;
+    color: #066b57;
+}
+#work h2{
+    margin: 20px 0px;
+    font-size: 3rem;
+    color: #35383b;
+    padding: 0%;
+}
+#work p{
+    font-size: 1.2rem;
+    color: #35383b;
+}
+#contact-form{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #35383b;
+}
+#contact-form form{
+    display: flex;
+    width: 70%;
+    height: 60vh;
+    background-color: #fff;
+    box-shadow: 2px 12px 20px rgba(0,0,0,2);
+    border: 4px solid #066b57;
+}
+.contact-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-right{
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid rgba(255,255,255,0.08);
+}
+.c-l-heading{
+    font-family: calibri;
+    color: #35383b;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+.f-email, .f-name{
+    display: flex;
+    flex-direction: column;
+    font-family: calibri;
+}
+.f-email font, .f-name font{
+    color: #35383b;
+    font-size: 22px;
+    font-weight: bold;
+}
+.f-email input, .f-name input{
+    height: 30px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #929292;
+    color: #35383b;
+    margin: 10px 0px;
+}
+.f-email input::placeholder, .f-name input::placeholder{
+    opacity: 0.8;
+    letter-spacing: 1px;
+}
+.f-email input:focus, .f-name input:focus{
+    border-bottom: 1px solid #066b57;
+    transition: all ease 0.5s;
+}
+.message font{
+    font-size: 18px;
+    color: #35383b;
+    font-family: calibri;
+}
+.message{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-right textarea{
+    width: 100% !important;
+    height: 320px !important;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #35383b;
+    font-size: 16px;
+}
+.contact-right textarea::placeholder{
+    color: #35383b;
+    opacity: 0.5;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: calibri;
+}
+.contact-right button{
+    width: 100%;
+    height: 50px;
+    background-color: #066b57;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin: 0px;
+    color: #fff; 
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer{
+    background-color: #066b57;
+    color: #fff;
+    font-family: calibri;
+    height: 60px;
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+#my_email{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+@media(max-width:1190px){
+    #main{
+        background-size: 1150px;
+    }
+    #projects{
+        height: auto;
+    }
+    .p-b-container{
+        flex-wrap: wrap;
+    }
+    .p-box{
+        flex-grow: 1;
+    }
+    .p-b-text{
+        text-align: center;
+    }
+    #contact-form form{
+        width: 95% !important;
+    }
+}
+@media(max-width: 970px){
+    #main{
+        background-image: none !important;
+    }
+    .name{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #about{
+        justify-content: center;
+        padding-top: 40px;
+    }
+    .about-text{
+        width: 90%;
+    }
+    .about-text h1{
+        font-size: 4rem;
+    }
+}
+@media(max-width: 900px){
+    .toggle{
+        display: block;
+        padding-top: 20px;
+    }
+    .toggle:before{
+        font-family: fontAwesome;
+        content: '\f0c9';
+        line-height: 0px;
+        margin-left: 25px;
+        font-size: 30px;
+    }
+    .toggle.active:before{
+        content: '\f00d';
+    }
+    nav{
+        padding: 10px 30px;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        background-color: #fff;
+        top: 50px;
+        left: 0;
+        transition: 0.5s;
+        overflow: hidden;
+        border: 3px solid #35383b;
+        display: none !important;
+        margin-top: 20px;
+        margin-left: 0px;
+        padding: 0px;
+    }
+    nav ul li a{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .active-menu{
+        display: block !important;
+    }
+    #contact-form{
+        padding: 20px;
+        height: auto;
+        box-sizing: border-box;
+    }
+    #contact-form form{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        width: 90% !important;
+    }
+    .contact-left, .contact-right{
+        width: 100%;
+        border: none;
+    }
+    .f-email, .f-name{
+        width: 100%;
+    }
+    .f-email input, .f-name input{
+        width: 100%;
+        border: none;
+        padding: 10px;
+        box-sizing: border-box;
+        height: 40px;
+    }
+    textarea{
+        margin: 10px 0px;
+        padding: 10px;
+        height: 200px !important;
+        width: 100% !important;
+    }
+    .message{
+        margin: 0px;
+    }
+    #contact-form form h1{
+        margin: 5px 0px;
+    }
+}
+@media(max-width: 600px){
+    .name{
+        width: 60%;
+    }
+    .social{
+        left: 50px;
+        transform: translate(-30px);
+    }
+}
+@media(max-width: 400px){
+    .p-box{
+        width: 100%;
+        height: 400px;
+    }
+    #main{
+        width: 100%;
+        height: 80vh;
+    }
+    .name{
+        padding-top: 40px;
+        font-family: calibri;
+        width: 300px;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translate(-20%, -50%);
+    }
+    
+#odd{
+    color: #066b57;
+    font-size: 20px;
+}
+#even{
+    color: #35383b;
+    font-size: 20px;
+}
+.name h1{
+    font-family: Poppins;
+    font-size: 100px;
+    margin: 0px;
+    letter-spacing: 1px;
+    color: #35383b;
+}
+#about{
+    height: auto;
+}
+.social i{
+    color: #066b57;
+    font-size: 10px;
+}
+#work{
+    height: auto;
+    width: 100%;
+}
+}
